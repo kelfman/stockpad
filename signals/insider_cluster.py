@@ -1,23 +1,29 @@
 """Insider cluster-buy signal from SEC Form 4 filings.
 
 The heuristic: how many distinct insiders made an open-market purchase
-(transaction code "P") within a trailing window, tracked on the same weekly
-cadence as the sector RS-ratio series so today's reading can be honestly
-ranked against this ticker's own history -- including all the quiet weeks
-where nothing happened, not just the event days themselves. Sampling only
-event days would bias the distribution toward looking busier than it is.
+(transaction code "P") within a trailing window. This is a sparse count, not
+a continuous series -- for a name at its perpetual zero, a "percentile" is a
+tie-splitting artifact (~p50) that looks like a middling measurement while
+conveying nothing. So this signal reports no percentile; the honesty lives in
+the measured facts surfaced in the descriptor -- buys vs the cluster
+threshold, how long since the last one, how many across the backfill window --
+per the README's "precise about what was measured" discipline.
+
+Form 4 must be filed within ~2 business days of the trade, so the data is
+near-real-time; the trailing window ends today, so the reading is genuinely
+fresh. The age of the last actual buy (which may be old) is stated in words.
 """
 
-from datetime import date
+from datetime import date, timedelta
 from xml.etree import ElementTree
 
-import pandas as pd
-
+from core.staleness import staleness
 from core.types import Direction, RawObservation, Signal, SubjectType
 
 CLUSTER_WINDOW_DAYS = 12  # matches the "3 insiders, 12 days" example in README/ARCHITECTURE
 CLUSTER_CONFIRM_INSIDERS = 3
 BACKFILL_DAYS = 730  # ~2 years, enough to cover the "first cluster buy in 18 months" example
+CADENCE_DAYS = 7  # window ends today, so the reading refreshes at least weekly
 
 
 def normalise(observation: RawObservation) -> list[dict]:
@@ -46,50 +52,34 @@ def normalise(observation: RawObservation) -> list[dict]:
     return transactions
 
 
-def rolling_purchaser_series(transactions: list[dict], backfill_days: int = BACKFILL_DAYS) -> pd.Series:
-    """Weekly series of distinct insiders with an open-market purchase (code
-    "P") in the trailing CLUSTER_WINDOW_DAYS, sampled every week over the
-    backfill window.
-    """
-    purchases = [
-        (pd.Timestamp(t["transaction_date"]), t["owner"])
+def purchases(transactions: list[dict]) -> list[tuple[date, str]]:
+    """(date, owner) for every open-market purchase (transaction code "P")."""
+    return [
+        (date.fromisoformat(t["transaction_date"]), t["owner"])
         for t in transactions
         if t["transaction_code"] == "P"
     ]
 
-    end = pd.Timestamp(date.today())
-    start = end - pd.Timedelta(days=backfill_days)
-    weeks = pd.date_range(start, end, freq="W-FRI")
 
-    counts = []
-    for week_end in weeks:
-        window_start = week_end - pd.Timedelta(days=CLUSTER_WINDOW_DAYS)
-        distinct_owners = {owner for txn_date, owner in purchases if window_start < txn_date <= week_end}
-        counts.append(len(distinct_owners))
-
-    return pd.Series(counts, index=weeks)
+def _facts(days_since_last_buy: int | None, total_purchases: int) -> str:
+    years = BACKFILL_DAYS // 365
+    if total_purchases == 0:
+        return f"no open-market buys in the trailing {years} yrs"
+    return (
+        f"last open-market buy {days_since_last_buy}d ago; "
+        f"{total_purchases} in the trailing {years} yrs"
+    )
 
 
-def percentile_rank(series: pd.Series, value: float) -> int:
-    """Mean-rank percentile: ties split the difference instead of all
-    inflating to p100. Matters here because the series is mostly repeated
-    small integers (0, 1, 2...), unlike a continuous z-score -- a ticker
-    with zero purchase activity all along would otherwise show today's zero
-    as a (meaningless) p100 instead of the unremarkable p50 it actually is.
-    """
-    below = int((series < value).sum())
-    equal = int((series == value).sum())
-    return int(round((below + 0.5 * equal) / len(series) * 100))
-
-
-def classify(latest_count: int) -> dict:
+def classify(latest_count: int, days_since_last_buy: int | None, total_purchases: int) -> dict:
+    facts = _facts(days_since_last_buy, total_purchases)
     if latest_count >= CLUSTER_CONFIRM_INSIDERS:
         return {
             "direction": Direction.BULLISH,
             "confirmed": True,
             "reading": (
                 f"{latest_count} distinct insiders bought in the trailing "
-                f"{CLUSTER_WINDOW_DAYS} days -- confirmed cluster buy"
+                f"{CLUSTER_WINDOW_DAYS} days -- confirmed cluster buy ({facts})"
             ),
         }
     if latest_count > 0:
@@ -97,45 +87,48 @@ def classify(latest_count: int) -> dict:
             "direction": Direction.NEUTRAL,
             "confirmed": False,
             "reading": (
-                f"{latest_count} insider(s) bought in the trailing {CLUSTER_WINDOW_DAYS} days -- "
-                f"below the {CLUSTER_CONFIRM_INSIDERS}-insider cluster bar"
+                f"{latest_count} insider bought in the trailing {CLUSTER_WINDOW_DAYS} days -- "
+                f"below the {CLUSTER_CONFIRM_INSIDERS}-insider cluster bar ({facts})"
             ),
         }
     return {
         "direction": Direction.NEUTRAL,
         "confirmed": False,
-        "reading": f"no insider purchases in the trailing {CLUSTER_WINDOW_DAYS} days",
+        "reading": f"no insider purchases in the trailing {CLUSTER_WINDOW_DAYS} days ({facts})",
     }
 
 
 def build_ticker_signal(ticker: str, filings: list[RawObservation]) -> dict:
     transactions = [txn for obs in filings for txn in normalise(obs)]
-    series = rolling_purchaser_series(transactions)
+    buys = purchases(transactions)
 
-    latest_count = int(series.iloc[-1])
-    percentile = percentile_rank(series, latest_count)
-    read = classify(latest_count)
-    as_of = series.index[-1].date().isoformat()
+    today = date.today()
+    window_start = today - timedelta(days=CLUSTER_WINDOW_DAYS)
+    latest_count = len({owner for d, owner in buys if window_start < d <= today})
+    total_purchases = len(buys)
+    days_since_last_buy = (today - max(d for d, _ in buys)).days if buys else None
+
+    read = classify(latest_count, days_since_last_buy, total_purchases)
+    as_of = today.isoformat()
 
     signal = Signal(
         subject_type=SubjectType.TICKER,
         subject=ticker,
         source="insider_form4_cluster",
         direction=read["direction"],
-        percentile_vs_history=percentile,
+        # A sparse count has no honest percentile -- the measured facts are in
+        # the descriptor instead. See module docstring.
+        percentile_vs_history=None,
         confirmed=read["confirmed"],
-        descriptor=f"{ticker}: {read['reading']} (p{percentile} of trailing {len(series)} wks)",
+        descriptor=f"{ticker}: {read['reading']}",
         as_of=as_of,
-        staleness="fresh",
+        staleness=staleness(as_of, CADENCE_DAYS),
     )
 
     return {
         "ticker": ticker,
         "latest_count": latest_count,
-        "percentile": percentile,
+        "days_since_last_buy": days_since_last_buy,
+        "total_purchases": total_purchases,
         "signal": signal,
-        "series": [
-            {"date": idx.date().isoformat(), "distinct_purchasers": int(v)}
-            for idx, v in series.items()
-        ],
     }

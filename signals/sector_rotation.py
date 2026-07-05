@@ -16,6 +16,7 @@ from datetime import date
 import pandas as pd
 
 from core.sectors import SECTORS
+from core.staleness import staleness
 from core.types import Direction, RawObservation, Signal, SubjectType
 
 SMOOTH_WINDOW = 14  # weeks -- EMA span applied to the raw ratio
@@ -23,6 +24,7 @@ NORM_WINDOW = 14  # weeks -- rolling window used to z-score-normalize around 100
 MOMENTUM_LOOKBACK = 4  # weeks -- rate-of-change window for the momentum axis
 CONFIRM_WEEKS = 3  # consecutive weeks required before a turn is called
 HEADING_LOOKBACK = 4  # weeks used to judge which way a sector is travelling
+CADENCE_DAYS = 7  # weekly bars -- a reading older than a week means the run is stale
 
 
 def normalise(observation: RawObservation) -> pd.Series:
@@ -191,7 +193,7 @@ def build_sector(ticker: str, observation: RawObservation, benchmark_weekly: pd.
             f"at p{percentile} of trailing {len(track)} wks, heading {heading})"
         ),
         as_of=as_of,
-        staleness="fresh",
+        staleness=staleness(as_of, CADENCE_DAYS),
     )
 
     return {

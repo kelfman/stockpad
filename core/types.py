@@ -35,7 +35,10 @@ class Signal:
     subject: str
     source: str
     direction: Direction
-    percentile_vs_history: int
+    # None when the underlying reading is not a genuinely continuous series --
+    # a sparse count (e.g. distinct insider purchases) has no honest percentile;
+    # forcing one would be false resolution over a near-binary measurement.
+    percentile_vs_history: int | None
     confirmed: bool
     descriptor: str
     as_of: str
