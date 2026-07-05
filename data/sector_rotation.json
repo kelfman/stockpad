@@ -1,0 +1,2047 @@
+{
+  "benchmark": "SPY",
+  "as_of": "2026-07-03",
+  "params": {
+    "smooth_window": 14,
+    "norm_window": 14,
+    "momentum_lookback": 4,
+    "confirm_weeks": 3
+  },
+  "sectors": [
+    {
+      "ticker": "XLI",
+      "name": "Industrials",
+      "quadrant": "Improving",
+      "weeks_in_quadrant": 4,
+      "heading": "toward Leading",
+      "rs_ratio": 95.73,
+      "rs_momentum": 117.49,
+      "momentum_percentile": 74,
+      "signal": {
+        "subject_type": "sector",
+        "subject": "XLI",
+        "source": "relative_strength_ratio",
+        "direction": "bullish",
+        "percentile_vs_history": 74,
+        "confirmed": true,
+        "descriptor": "XLI (Industrials): ratio bottomed and curled upward 5 consecutive weeks -- confirmed early rotation, not yet outperforming (RS-Ratio 95.7, RS-Momentum 117.5 at p74 of trailing 27 wks, heading toward Leading)",
+        "as_of": "2026-07-03",
+        "staleness": "fresh"
+      },
+      "series": [
+        {
+          "date": "2026-01-02",
+          "rs_ratio": 91.16,
+          "rs_momentum": 117.21,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-01-09",
+          "rs_ratio": 94.82,
+          "rs_momentum": 120.77,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-01-16",
+          "rs_ratio": 105.57,
+          "rs_momentum": 130.52,
+          "quadrant": "Leading"
+        },
+        {
+          "date": "2026-01-23",
+          "rs_ratio": 113.66,
+          "rs_momentum": 127.49,
+          "quadrant": "Leading"
+        },
+        {
+          "date": "2026-01-30",
+          "rs_ratio": 119.36,
+          "rs_momentum": 122.64,
+          "quadrant": "Leading"
+        },
+        {
+          "date": "2026-02-06",
+          "rs_ratio": 125.09,
+          "rs_momentum": 119.17,
+          "quadrant": "Leading"
+        },
+        {
+          "date": "2026-02-13",
+          "rs_ratio": 125.27,
+          "rs_momentum": 108.31,
+          "quadrant": "Leading"
+        },
+        {
+          "date": "2026-02-20",
+          "rs_ratio": 123.48,
+          "rs_momentum": 98.9,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-02-27",
+          "rs_ratio": 121.56,
+          "rs_momentum": 91.78,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-03-06",
+          "rs_ratio": 118.88,
+          "rs_momentum": 85.35,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-03-13",
+          "rs_ratio": 116.3,
+          "rs_momentum": 84.65,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-03-20",
+          "rs_ratio": 114.5,
+          "rs_momentum": 86.25,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-03-27",
+          "rs_ratio": 113.37,
+          "rs_momentum": 88.09,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-04-03",
+          "rs_ratio": 112.23,
+          "rs_momentum": 90.09,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-04-10",
+          "rs_ratio": 111.78,
+          "rs_momentum": 92.28,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-04-17",
+          "rs_ratio": 109.91,
+          "rs_momentum": 92.98,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-04-24",
+          "rs_ratio": 107.63,
+          "rs_momentum": 93.27,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-05-01",
+          "rs_ratio": 105.03,
+          "rs_momentum": 93.41,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-05-08",
+          "rs_ratio": 100.27,
+          "rs_momentum": 91.26,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-05-15",
+          "rs_ratio": 92.29,
+          "rs_momentum": 85.55,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-05-22",
+          "rs_ratio": 82.62,
+          "rs_momentum": 78.14,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-05-29",
+          "rs_ratio": 78.1,
+          "rs_momentum": 78.89,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-06-05",
+          "rs_ratio": 80.99,
+          "rs_momentum": 89.75,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-06-12",
+          "rs_ratio": 83.89,
+          "rs_momentum": 104.4,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-06-19",
+          "rs_ratio": 87.5,
+          "rs_momentum": 117.98,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-06-26",
+          "rs_ratio": 92.31,
+          "rs_momentum": 121.25,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-07-03",
+          "rs_ratio": 95.73,
+          "rs_momentum": 117.49,
+          "quadrant": "Improving"
+        }
+      ]
+    },
+    {
+      "ticker": "XLU",
+      "name": "Utilities",
+      "quadrant": "Improving",
+      "weeks_in_quadrant": 3,
+      "heading": "holding",
+      "rs_ratio": 87.96,
+      "rs_momentum": 115.06,
+      "momentum_percentile": 96,
+      "signal": {
+        "subject_type": "sector",
+        "subject": "XLU",
+        "source": "relative_strength_ratio",
+        "direction": "bullish",
+        "percentile_vs_history": 96,
+        "confirmed": true,
+        "descriptor": "XLU (Utilities): ratio bottomed and curled upward 5 consecutive weeks -- confirmed early rotation, not yet outperforming (RS-Ratio 88.0, RS-Momentum 115.1 at p96 of trailing 27 wks, heading holding)",
+        "as_of": "2026-07-03",
+        "staleness": "fresh"
+      },
+      "series": [
+        {
+          "date": "2026-01-02",
+          "rs_ratio": 79.68,
+          "rs_momentum": 94.57,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-01-09",
+          "rs_ratio": 79.93,
+          "rs_momentum": 100.32,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-01-16",
+          "rs_ratio": 82.37,
+          "rs_momentum": 103.88,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-01-23",
+          "rs_ratio": 83.31,
+          "rs_momentum": 106.12,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-01-30",
+          "rs_ratio": 84.84,
+          "rs_momentum": 107.08,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-02-06",
+          "rs_ratio": 86.38,
+          "rs_momentum": 109.12,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-02-13",
+          "rs_ratio": 92.63,
+          "rs_momentum": 111.88,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-02-20",
+          "rs_ratio": 97.15,
+          "rs_momentum": 112.99,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-02-27",
+          "rs_ratio": 104.79,
+          "rs_momentum": 114.95,
+          "quadrant": "Leading"
+        },
+        {
+          "date": "2026-03-06",
+          "rs_ratio": 112.72,
+          "rs_momentum": 116.2,
+          "quadrant": "Leading"
+        },
+        {
+          "date": "2026-03-13",
+          "rs_ratio": 119.44,
+          "rs_momentum": 113.87,
+          "quadrant": "Leading"
+        },
+        {
+          "date": "2026-03-20",
+          "rs_ratio": 119.42,
+          "rs_momentum": 109.85,
+          "quadrant": "Leading"
+        },
+        {
+          "date": "2026-03-27",
+          "rs_ratio": 120.2,
+          "rs_momentum": 104.68,
+          "quadrant": "Leading"
+        },
+        {
+          "date": "2026-04-03",
+          "rs_ratio": 118.52,
+          "rs_momentum": 94.99,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-04-10",
+          "rs_ratio": 116.03,
+          "rs_momentum": 84.56,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-04-17",
+          "rs_ratio": 111.69,
+          "rs_momentum": 82.22,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-04-24",
+          "rs_ratio": 108.17,
+          "rs_momentum": 82.0,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-05-01",
+          "rs_ratio": 105.1,
+          "rs_momentum": 83.98,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-05-08",
+          "rs_ratio": 98.79,
+          "rs_momentum": 84.23,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-05-15",
+          "rs_ratio": 90.64,
+          "rs_momentum": 84.74,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-05-22",
+          "rs_ratio": 85.07,
+          "rs_momentum": 86.12,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-05-29",
+          "rs_ratio": 80.52,
+          "rs_momentum": 87.49,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-06-05",
+          "rs_ratio": 80.82,
+          "rs_momentum": 92.15,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-06-12",
+          "rs_ratio": 82.16,
+          "rs_momentum": 98.31,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-06-19",
+          "rs_ratio": 83.67,
+          "rs_momentum": 104.39,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-06-26",
+          "rs_ratio": 86.7,
+          "rs_momentum": 112.38,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-07-03",
+          "rs_ratio": 87.96,
+          "rs_momentum": 115.06,
+          "quadrant": "Improving"
+        }
+      ]
+    },
+    {
+      "ticker": "XLB",
+      "name": "Materials",
+      "quadrant": "Improving",
+      "weeks_in_quadrant": 3,
+      "heading": "holding",
+      "rs_ratio": 88.45,
+      "rs_momentum": 114.85,
+      "momentum_percentile": 78,
+      "signal": {
+        "subject_type": "sector",
+        "subject": "XLB",
+        "source": "relative_strength_ratio",
+        "direction": "bullish",
+        "percentile_vs_history": 78,
+        "confirmed": true,
+        "descriptor": "XLB (Materials): ratio bottomed and curled upward 5 consecutive weeks -- confirmed early rotation, not yet outperforming (RS-Ratio 88.4, RS-Momentum 114.9 at p78 of trailing 27 wks, heading holding)",
+        "as_of": "2026-07-03",
+        "staleness": "fresh"
+      },
+      "series": [
+        {
+          "date": "2026-01-02",
+          "rs_ratio": 92.92,
+          "rs_momentum": 111.95,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-01-09",
+          "rs_ratio": 97.16,
+          "rs_momentum": 116.9,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-01-16",
+          "rs_ratio": 103.4,
+          "rs_momentum": 123.32,
+          "quadrant": "Leading"
+        },
+        {
+          "date": "2026-01-23",
+          "rs_ratio": 114.23,
+          "rs_momentum": 127.75,
+          "quadrant": "Leading"
+        },
+        {
+          "date": "2026-01-30",
+          "rs_ratio": 120.61,
+          "rs_momentum": 123.84,
+          "quadrant": "Leading"
+        },
+        {
+          "date": "2026-02-06",
+          "rs_ratio": 123.68,
+          "rs_momentum": 117.99,
+          "quadrant": "Leading"
+        },
+        {
+          "date": "2026-02-13",
+          "rs_ratio": 124.35,
+          "rs_momentum": 110.37,
+          "quadrant": "Leading"
+        },
+        {
+          "date": "2026-02-20",
+          "rs_ratio": 122.07,
+          "rs_momentum": 95.54,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-02-27",
+          "rs_ratio": 120.43,
+          "rs_momentum": 87.22,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-03-06",
+          "rs_ratio": 117.38,
+          "rs_momentum": 83.46,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-03-13",
+          "rs_ratio": 115.33,
+          "rs_momentum": 83.73,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-03-20",
+          "rs_ratio": 113.0,
+          "rs_momentum": 85.84,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-03-27",
+          "rs_ratio": 113.21,
+          "rs_momentum": 88.63,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-04-03",
+          "rs_ratio": 113.12,
+          "rs_momentum": 91.61,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-04-10",
+          "rs_ratio": 112.83,
+          "rs_momentum": 93.5,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-04-17",
+          "rs_ratio": 110.98,
+          "rs_momentum": 94.48,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-04-24",
+          "rs_ratio": 109.24,
+          "rs_momentum": 94.0,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-05-01",
+          "rs_ratio": 106.64,
+          "rs_momentum": 93.33,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-05-08",
+          "rs_ratio": 102.75,
+          "rs_momentum": 91.41,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-05-15",
+          "rs_ratio": 95.24,
+          "rs_momentum": 86.15,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-05-22",
+          "rs_ratio": 85.71,
+          "rs_momentum": 76.85,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-05-29",
+          "rs_ratio": 80.23,
+          "rs_momentum": 77.78,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-06-05",
+          "rs_ratio": 80.83,
+          "rs_momentum": 85.99,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-06-12",
+          "rs_ratio": 83.56,
+          "rs_momentum": 99.14,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-06-19",
+          "rs_ratio": 84.96,
+          "rs_momentum": 111.45,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-06-26",
+          "rs_ratio": 87.27,
+          "rs_momentum": 116.91,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-07-03",
+          "rs_ratio": 88.45,
+          "rs_momentum": 114.85,
+          "quadrant": "Improving"
+        }
+      ]
+    },
+    {
+      "ticker": "XLF",
+      "name": "Financials",
+      "quadrant": "Improving",
+      "weeks_in_quadrant": 5,
+      "heading": "toward Leading",
+      "rs_ratio": 92.7,
+      "rs_momentum": 114.74,
+      "momentum_percentile": 100,
+      "signal": {
+        "subject_type": "sector",
+        "subject": "XLF",
+        "source": "relative_strength_ratio",
+        "direction": "bullish",
+        "percentile_vs_history": 100,
+        "confirmed": true,
+        "descriptor": "XLF (Financials): ratio bottomed and curled upward 7 consecutive weeks -- confirmed early rotation, not yet outperforming (RS-Ratio 92.7, RS-Momentum 114.7 at p100 of trailing 27 wks, heading toward Leading)",
+        "as_of": "2026-07-03",
+        "staleness": "fresh"
+      },
+      "series": [
+        {
+          "date": "2026-01-02",
+          "rs_ratio": 94.59,
+          "rs_momentum": 114.3,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-01-09",
+          "rs_ratio": 96.23,
+          "rs_momentum": 110.41,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-01-16",
+          "rs_ratio": 95.13,
+          "rs_momentum": 102.52,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-01-23",
+          "rs_ratio": 89.27,
+          "rs_momentum": 85.16,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-01-30",
+          "rs_ratio": 82.53,
+          "rs_momentum": 75.0,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-02-06",
+          "rs_ratio": 82.11,
+          "rs_momentum": 77.88,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-02-13",
+          "rs_ratio": 76.5,
+          "rs_momentum": 78.74,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-02-20",
+          "rs_ratio": 77.09,
+          "rs_momentum": 87.82,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-02-27",
+          "rs_ratio": 77.46,
+          "rs_momentum": 95.85,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-03-06",
+          "rs_ratio": 79.24,
+          "rs_momentum": 98.72,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-03-13",
+          "rs_ratio": 79.78,
+          "rs_momentum": 105.37,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-03-20",
+          "rs_ratio": 82.44,
+          "rs_momentum": 107.67,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-03-27",
+          "rs_ratio": 84.14,
+          "rs_momentum": 109.12,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-04-03",
+          "rs_ratio": 85.58,
+          "rs_momentum": 108.96,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-04-10",
+          "rs_ratio": 86.04,
+          "rs_momentum": 109.22,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-04-17",
+          "rs_ratio": 85.69,
+          "rs_momentum": 106.41,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-04-24",
+          "rs_ratio": 84.11,
+          "rs_momentum": 103.07,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-05-01",
+          "rs_ratio": 83.46,
+          "rs_momentum": 100.52,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-05-08",
+          "rs_ratio": 81.65,
+          "rs_momentum": 97.1,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-05-15",
+          "rs_ratio": 80.78,
+          "rs_momentum": 95.25,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-05-22",
+          "rs_ratio": 81.29,
+          "rs_momentum": 95.4,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-05-29",
+          "rs_ratio": 81.33,
+          "rs_momentum": 94.21,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-06-05",
+          "rs_ratio": 83.4,
+          "rs_momentum": 101.84,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-06-12",
+          "rs_ratio": 85.61,
+          "rs_momentum": 107.9,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-06-19",
+          "rs_ratio": 87.31,
+          "rs_momentum": 109.92,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-06-26",
+          "rs_ratio": 89.78,
+          "rs_momentum": 114.11,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-07-03",
+          "rs_ratio": 92.7,
+          "rs_momentum": 114.74,
+          "quadrant": "Improving"
+        }
+      ]
+    },
+    {
+      "ticker": "XLP",
+      "name": "Consumer Staples",
+      "quadrant": "Improving",
+      "weeks_in_quadrant": 5,
+      "heading": "holding",
+      "rs_ratio": 88.01,
+      "rs_momentum": 114.42,
+      "momentum_percentile": 67,
+      "signal": {
+        "subject_type": "sector",
+        "subject": "XLP",
+        "source": "relative_strength_ratio",
+        "direction": "bullish",
+        "percentile_vs_history": 67,
+        "confirmed": true,
+        "descriptor": "XLP (Consumer Staples): ratio bottomed and curled upward 5 consecutive weeks -- confirmed early rotation, not yet outperforming (RS-Ratio 88.0, RS-Momentum 114.4 at p67 of trailing 27 wks, heading holding)",
+        "as_of": "2026-07-03",
+        "staleness": "fresh"
+      },
+      "series": [
+        {
+          "date": "2026-01-02",
+          "rs_ratio": 86.96,
+          "rs_momentum": 91.61,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-01-09",
+          "rs_ratio": 87.09,
+          "rs_momentum": 84.75,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-01-16",
+          "rs_ratio": 89.36,
+          "rs_momentum": 97.78,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-01-23",
+          "rs_ratio": 92.3,
+          "rs_momentum": 120.31,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-01-30",
+          "rs_ratio": 95.86,
+          "rs_momentum": 127.08,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-02-06",
+          "rs_ratio": 107.11,
+          "rs_momentum": 130.93,
+          "quadrant": "Leading"
+        },
+        {
+          "date": "2026-02-13",
+          "rs_ratio": 119.88,
+          "rs_momentum": 127.98,
+          "quadrant": "Leading"
+        },
+        {
+          "date": "2026-02-20",
+          "rs_ratio": 121.69,
+          "rs_momentum": 120.14,
+          "quadrant": "Leading"
+        },
+        {
+          "date": "2026-02-27",
+          "rs_ratio": 122.44,
+          "rs_momentum": 114.59,
+          "quadrant": "Leading"
+        },
+        {
+          "date": "2026-03-06",
+          "rs_ratio": 119.83,
+          "rs_momentum": 102.22,
+          "quadrant": "Leading"
+        },
+        {
+          "date": "2026-03-13",
+          "rs_ratio": 117.78,
+          "rs_momentum": 90.05,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-03-20",
+          "rs_ratio": 115.22,
+          "rs_momentum": 87.64,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-03-27",
+          "rs_ratio": 114.47,
+          "rs_momentum": 87.66,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-04-03",
+          "rs_ratio": 112.38,
+          "rs_momentum": 88.91,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-04-10",
+          "rs_ratio": 109.53,
+          "rs_momentum": 89.16,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-04-17",
+          "rs_ratio": 105.1,
+          "rs_momentum": 88.82,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-04-24",
+          "rs_ratio": 100.87,
+          "rs_momentum": 87.94,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-05-01",
+          "rs_ratio": 96.22,
+          "rs_momentum": 88.05,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-05-08",
+          "rs_ratio": 88.68,
+          "rs_momentum": 87.4,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-05-15",
+          "rs_ratio": 82.58,
+          "rs_momentum": 88.35,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-05-22",
+          "rs_ratio": 80.7,
+          "rs_momentum": 90.68,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-05-29",
+          "rs_ratio": 79.75,
+          "rs_momentum": 93.76,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-06-05",
+          "rs_ratio": 81.9,
+          "rs_momentum": 104.01,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-06-12",
+          "rs_ratio": 84.51,
+          "rs_momentum": 118.02,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-06-19",
+          "rs_ratio": 85.05,
+          "rs_momentum": 118.7,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-06-26",
+          "rs_ratio": 87.19,
+          "rs_momentum": 118.31,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-07-03",
+          "rs_ratio": 88.01,
+          "rs_momentum": 114.42,
+          "quadrant": "Improving"
+        }
+      ]
+    },
+    {
+      "ticker": "XLRE",
+      "name": "Real Estate",
+      "quadrant": "Improving",
+      "weeks_in_quadrant": 4,
+      "heading": "holding",
+      "rs_ratio": 88.91,
+      "rs_momentum": 113.22,
+      "momentum_percentile": 63,
+      "signal": {
+        "subject_type": "sector",
+        "subject": "XLRE",
+        "source": "relative_strength_ratio",
+        "direction": "neutral",
+        "percentile_vs_history": 63,
+        "confirmed": false,
+        "descriptor": "XLRE (Real Estate): possible turn (4 wk in Improving) but the ratio rise is unconfirmed -- 2 wk rising, needs 3 consecutive (RS-Ratio 88.9, RS-Momentum 113.2 at p63 of trailing 27 wks, heading holding)",
+        "as_of": "2026-07-03",
+        "staleness": "fresh"
+      },
+      "series": [
+        {
+          "date": "2026-01-02",
+          "rs_ratio": 84.24,
+          "rs_momentum": 94.97,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-01-09",
+          "rs_ratio": 84.18,
+          "rs_momentum": 96.19,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-01-16",
+          "rs_ratio": 86.49,
+          "rs_momentum": 117.8,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-01-23",
+          "rs_ratio": 87.27,
+          "rs_momentum": 120.74,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-01-30",
+          "rs_ratio": 87.87,
+          "rs_momentum": 118.2,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-02-06",
+          "rs_ratio": 89.51,
+          "rs_momentum": 121.05,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-02-13",
+          "rs_ratio": 94.55,
+          "rs_momentum": 123.51,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-02-20",
+          "rs_ratio": 98.82,
+          "rs_momentum": 124.32,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-02-27",
+          "rs_ratio": 104.89,
+          "rs_momentum": 125.14,
+          "quadrant": "Leading"
+        },
+        {
+          "date": "2026-03-06",
+          "rs_ratio": 111.42,
+          "rs_momentum": 123.46,
+          "quadrant": "Leading"
+        },
+        {
+          "date": "2026-03-13",
+          "rs_ratio": 116.43,
+          "rs_momentum": 118.36,
+          "quadrant": "Leading"
+        },
+        {
+          "date": "2026-03-20",
+          "rs_ratio": 116.47,
+          "rs_momentum": 111.42,
+          "quadrant": "Leading"
+        },
+        {
+          "date": "2026-03-27",
+          "rs_ratio": 115.97,
+          "rs_momentum": 102.94,
+          "quadrant": "Leading"
+        },
+        {
+          "date": "2026-04-03",
+          "rs_ratio": 115.18,
+          "rs_momentum": 93.35,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-04-10",
+          "rs_ratio": 113.61,
+          "rs_momentum": 85.63,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-04-17",
+          "rs_ratio": 111.85,
+          "rs_momentum": 84.59,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-04-24",
+          "rs_ratio": 108.65,
+          "rs_momentum": 83.89,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-05-01",
+          "rs_ratio": 106.07,
+          "rs_momentum": 84.57,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-05-08",
+          "rs_ratio": 101.05,
+          "rs_momentum": 84.23,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-05-15",
+          "rs_ratio": 90.56,
+          "rs_momentum": 81.64,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-05-22",
+          "rs_ratio": 83.72,
+          "rs_momentum": 83.09,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-05-29",
+          "rs_ratio": 77.8,
+          "rs_momentum": 84.35,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-06-05",
+          "rs_ratio": 81.13,
+          "rs_momentum": 90.61,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-06-12",
+          "rs_ratio": 84.76,
+          "rs_momentum": 100.05,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-06-19",
+          "rs_ratio": 83.99,
+          "rs_momentum": 105.77,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-06-26",
+          "rs_ratio": 88.52,
+          "rs_momentum": 115.02,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-07-03",
+          "rs_ratio": 88.91,
+          "rs_momentum": 113.22,
+          "quadrant": "Improving"
+        }
+      ]
+    },
+    {
+      "ticker": "XLV",
+      "name": "Health Care",
+      "quadrant": "Improving",
+      "weeks_in_quadrant": 8,
+      "heading": "toward Leading",
+      "rs_ratio": 94.12,
+      "rs_momentum": 108.79,
+      "momentum_percentile": 78,
+      "signal": {
+        "subject_type": "sector",
+        "subject": "XLV",
+        "source": "relative_strength_ratio",
+        "direction": "bullish",
+        "percentile_vs_history": 78,
+        "confirmed": true,
+        "descriptor": "XLV (Health Care): ratio bottomed and curled upward 10 consecutive weeks -- confirmed early rotation, not yet outperforming (RS-Ratio 94.1, RS-Momentum 108.8 at p78 of trailing 27 wks, heading toward Leading)",
+        "as_of": "2026-07-03",
+        "staleness": "fresh"
+      },
+      "series": [
+        {
+          "date": "2026-01-02",
+          "rs_ratio": 114.54,
+          "rs_momentum": 88.82,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-01-09",
+          "rs_ratio": 113.48,
+          "rs_momentum": 90.24,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-01-16",
+          "rs_ratio": 112.11,
+          "rs_momentum": 90.98,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-01-23",
+          "rs_ratio": 111.91,
+          "rs_momentum": 92.73,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-01-30",
+          "rs_ratio": 110.27,
+          "rs_momentum": 92.98,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-02-06",
+          "rs_ratio": 110.71,
+          "rs_momentum": 94.55,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-02-13",
+          "rs_ratio": 112.76,
+          "rs_momentum": 97.29,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-02-20",
+          "rs_ratio": 113.41,
+          "rs_momentum": 98.75,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-02-27",
+          "rs_ratio": 116.34,
+          "rs_momentum": 104.03,
+          "quadrant": "Leading"
+        },
+        {
+          "date": "2026-03-06",
+          "rs_ratio": 114.59,
+          "rs_momentum": 105.45,
+          "quadrant": "Leading"
+        },
+        {
+          "date": "2026-03-13",
+          "rs_ratio": 112.74,
+          "rs_momentum": 103.92,
+          "quadrant": "Leading"
+        },
+        {
+          "date": "2026-03-20",
+          "rs_ratio": 109.73,
+          "rs_momentum": 97.42,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-03-27",
+          "rs_ratio": 108.23,
+          "rs_momentum": 87.34,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-04-03",
+          "rs_ratio": 104.9,
+          "rs_momentum": 83.96,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-04-10",
+          "rs_ratio": 93.97,
+          "rs_momentum": 75.26,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-04-17",
+          "rs_ratio": 79.28,
+          "rs_momentum": 73.56,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-04-24",
+          "rs_ratio": 73.0,
+          "rs_momentum": 77.65,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-05-01",
+          "rs_ratio": 74.5,
+          "rs_momentum": 84.74,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-05-08",
+          "rs_ratio": 75.73,
+          "rs_momentum": 94.34,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-05-15",
+          "rs_ratio": 78.12,
+          "rs_momentum": 106.52,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-05-22",
+          "rs_ratio": 80.88,
+          "rs_momentum": 112.14,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-05-29",
+          "rs_ratio": 82.44,
+          "rs_momentum": 111.49,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-06-05",
+          "rs_ratio": 85.11,
+          "rs_momentum": 112.06,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-06-12",
+          "rs_ratio": 87.06,
+          "rs_momentum": 111.25,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-06-19",
+          "rs_ratio": 87.53,
+          "rs_momentum": 109.27,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-06-26",
+          "rs_ratio": 91.06,
+          "rs_momentum": 109.59,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-07-03",
+          "rs_ratio": 94.12,
+          "rs_momentum": 108.79,
+          "quadrant": "Improving"
+        }
+      ]
+    },
+    {
+      "ticker": "XLC",
+      "name": "Communication Services",
+      "quadrant": "Improving",
+      "weeks_in_quadrant": 7,
+      "heading": "holding",
+      "rs_ratio": 83.35,
+      "rs_momentum": 107.86,
+      "momentum_percentile": 78,
+      "signal": {
+        "subject_type": "sector",
+        "subject": "XLC",
+        "source": "relative_strength_ratio",
+        "direction": "bullish",
+        "percentile_vs_history": 78,
+        "confirmed": true,
+        "descriptor": "XLC (Communication Services): ratio bottomed and curled upward 8 consecutive weeks -- confirmed early rotation, not yet outperforming (RS-Ratio 83.3, RS-Momentum 107.9 at p78 of trailing 27 wks, heading holding)",
+        "as_of": "2026-07-03",
+        "staleness": "fresh"
+      },
+      "series": [
+        {
+          "date": "2026-01-02",
+          "rs_ratio": 92.03,
+          "rs_momentum": 111.05,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-01-09",
+          "rs_ratio": 92.17,
+          "rs_momentum": 111.13,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-01-16",
+          "rs_ratio": 89.05,
+          "rs_momentum": 106.6,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-01-23",
+          "rs_ratio": 88.96,
+          "rs_momentum": 104.67,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-01-30",
+          "rs_ratio": 93.93,
+          "rs_momentum": 106.82,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-02-06",
+          "rs_ratio": 87.67,
+          "rs_momentum": 100.38,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-02-13",
+          "rs_ratio": 81.42,
+          "rs_momentum": 96.4,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-02-20",
+          "rs_ratio": 82.76,
+          "rs_momentum": 95.77,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-02-27",
+          "rs_ratio": 91.07,
+          "rs_momentum": 97.79,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-03-06",
+          "rs_ratio": 106.26,
+          "rs_momentum": 124.95,
+          "quadrant": "Leading"
+        },
+        {
+          "date": "2026-03-13",
+          "rs_ratio": 112.3,
+          "rs_momentum": 126.5,
+          "quadrant": "Leading"
+        },
+        {
+          "date": "2026-03-20",
+          "rs_ratio": 116.35,
+          "rs_momentum": 121.3,
+          "quadrant": "Leading"
+        },
+        {
+          "date": "2026-03-27",
+          "rs_ratio": 108.91,
+          "rs_momentum": 108.17,
+          "quadrant": "Leading"
+        },
+        {
+          "date": "2026-04-03",
+          "rs_ratio": 107.1,
+          "rs_momentum": 95.74,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-04-10",
+          "rs_ratio": 98.6,
+          "rs_momentum": 87.0,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-04-17",
+          "rs_ratio": 91.66,
+          "rs_momentum": 83.24,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-04-24",
+          "rs_ratio": 76.85,
+          "rs_momentum": 82.74,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-05-01",
+          "rs_ratio": 74.85,
+          "rs_momentum": 85.3,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-05-08",
+          "rs_ratio": 74.69,
+          "rs_momentum": 90.53,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-05-15",
+          "rs_ratio": 76.06,
+          "rs_momentum": 94.77,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-05-22",
+          "rs_ratio": 77.4,
+          "rs_momentum": 101.84,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-05-29",
+          "rs_ratio": 78.71,
+          "rs_momentum": 103.01,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-06-05",
+          "rs_ratio": 79.98,
+          "rs_momentum": 103.37,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-06-12",
+          "rs_ratio": 81.18,
+          "rs_momentum": 103.85,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-06-19",
+          "rs_ratio": 81.63,
+          "rs_momentum": 104.81,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-06-26",
+          "rs_ratio": 82.24,
+          "rs_momentum": 106.67,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-07-03",
+          "rs_ratio": 83.35,
+          "rs_momentum": 107.86,
+          "quadrant": "Improving"
+        }
+      ]
+    },
+    {
+      "ticker": "XLY",
+      "name": "Consumer Discretionary",
+      "quadrant": "Improving",
+      "weeks_in_quadrant": 1,
+      "heading": "holding",
+      "rs_ratio": 84.82,
+      "rs_momentum": 104.82,
+      "momentum_percentile": 63,
+      "signal": {
+        "subject_type": "sector",
+        "subject": "XLY",
+        "source": "relative_strength_ratio",
+        "direction": "bullish",
+        "percentile_vs_history": 63,
+        "confirmed": true,
+        "descriptor": "XLY (Consumer Discretionary): ratio bottomed and curled upward 4 consecutive weeks -- confirmed early rotation, not yet outperforming (RS-Ratio 84.8, RS-Momentum 104.8 at p63 of trailing 27 wks, heading holding)",
+        "as_of": "2026-07-03",
+        "staleness": "fresh"
+      },
+      "series": [
+        {
+          "date": "2026-01-02",
+          "rs_ratio": 91.48,
+          "rs_momentum": 113.94,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-01-09",
+          "rs_ratio": 96.3,
+          "rs_momentum": 112.57,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-01-16",
+          "rs_ratio": 98.25,
+          "rs_momentum": 109.28,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-01-23",
+          "rs_ratio": 103.36,
+          "rs_momentum": 110.06,
+          "quadrant": "Leading"
+        },
+        {
+          "date": "2026-01-30",
+          "rs_ratio": 102.54,
+          "rs_momentum": 109.31,
+          "quadrant": "Leading"
+        },
+        {
+          "date": "2026-02-06",
+          "rs_ratio": 91.85,
+          "rs_momentum": 97.34,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-02-13",
+          "rs_ratio": 80.13,
+          "rs_momentum": 87.4,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-02-20",
+          "rs_ratio": 76.53,
+          "rs_momentum": 82.3,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-02-27",
+          "rs_ratio": 77.34,
+          "rs_momentum": 84.16,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-03-06",
+          "rs_ratio": 78.78,
+          "rs_momentum": 92.09,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-03-13",
+          "rs_ratio": 78.63,
+          "rs_momentum": 99.67,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-03-20",
+          "rs_ratio": 79.21,
+          "rs_momentum": 102.61,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-03-27",
+          "rs_ratio": 80.72,
+          "rs_momentum": 103.69,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-04-03",
+          "rs_ratio": 81.44,
+          "rs_momentum": 103.88,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-04-10",
+          "rs_ratio": 83.01,
+          "rs_momentum": 105.52,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-04-17",
+          "rs_ratio": 85.62,
+          "rs_momentum": 107.37,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-04-24",
+          "rs_ratio": 86.18,
+          "rs_momentum": 106.74,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-05-01",
+          "rs_ratio": 85.93,
+          "rs_momentum": 106.48,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-05-08",
+          "rs_ratio": 85.09,
+          "rs_momentum": 105.29,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-05-15",
+          "rs_ratio": 82.71,
+          "rs_momentum": 100.93,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-05-22",
+          "rs_ratio": 82.5,
+          "rs_momentum": 99.36,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-05-29",
+          "rs_ratio": 82.77,
+          "rs_momentum": 97.82,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-06-05",
+          "rs_ratio": 81.97,
+          "rs_momentum": 93.47,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-06-12",
+          "rs_ratio": 82.38,
+          "rs_momentum": 95.68,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-06-19",
+          "rs_ratio": 83.0,
+          "rs_momentum": 97.55,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-06-26",
+          "rs_ratio": 83.83,
+          "rs_momentum": 99.51,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-07-03",
+          "rs_ratio": 84.82,
+          "rs_momentum": 104.82,
+          "quadrant": "Improving"
+        }
+      ]
+    },
+    {
+      "ticker": "XLK",
+      "name": "Technology",
+      "quadrant": "Weakening",
+      "weeks_in_quadrant": 7,
+      "heading": "holding",
+      "rs_ratio": 114.35,
+      "rs_momentum": 90.41,
+      "momentum_percentile": 37,
+      "signal": {
+        "subject_type": "sector",
+        "subject": "XLK",
+        "source": "relative_strength_ratio",
+        "direction": "neutral",
+        "percentile_vs_history": 37,
+        "confirmed": true,
+        "descriptor": "XLK (Technology): still outperforming but momentum fading, 7 wk in Weakening -- watch for recovery or rollover into Lagging (RS-Ratio 114.3, RS-Momentum 90.4 at p37 of trailing 27 wks, heading holding)",
+        "as_of": "2026-07-03",
+        "staleness": "fresh"
+      },
+      "series": [
+        {
+          "date": "2026-01-02",
+          "rs_ratio": 106.37,
+          "rs_momentum": 97.04,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-01-09",
+          "rs_ratio": 104.68,
+          "rs_momentum": 97.71,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-01-16",
+          "rs_ratio": 102.49,
+          "rs_momentum": 96.18,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-01-23",
+          "rs_ratio": 98.71,
+          "rs_momentum": 90.92,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-01-30",
+          "rs_ratio": 79.27,
+          "rs_momentum": 70.57,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-02-06",
+          "rs_ratio": 71.35,
+          "rs_momentum": 74.4,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-02-13",
+          "rs_ratio": 73.69,
+          "rs_momentum": 83.17,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-02-20",
+          "rs_ratio": 75.74,
+          "rs_momentum": 90.28,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-02-27",
+          "rs_ratio": 77.0,
+          "rs_momentum": 109.07,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-03-06",
+          "rs_ratio": 79.85,
+          "rs_momentum": 115.72,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-03-13",
+          "rs_ratio": 83.22,
+          "rs_momentum": 114.15,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-03-20",
+          "rs_ratio": 86.74,
+          "rs_momentum": 113.18,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-03-27",
+          "rs_ratio": 87.13,
+          "rs_momentum": 111.26,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-04-03",
+          "rs_ratio": 89.03,
+          "rs_momentum": 109.72,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-04-10",
+          "rs_ratio": 92.26,
+          "rs_momentum": 108.79,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-04-17",
+          "rs_ratio": 100.92,
+          "rs_momentum": 110.63,
+          "quadrant": "Leading"
+        },
+        {
+          "date": "2026-04-24",
+          "rs_ratio": 114.7,
+          "rs_momentum": 115.31,
+          "quadrant": "Leading"
+        },
+        {
+          "date": "2026-05-01",
+          "rs_ratio": 122.54,
+          "rs_momentum": 115.22,
+          "quadrant": "Leading"
+        },
+        {
+          "date": "2026-05-08",
+          "rs_ratio": 126.73,
+          "rs_momentum": 113.57,
+          "quadrant": "Leading"
+        },
+        {
+          "date": "2026-05-15",
+          "rs_ratio": 124.93,
+          "rs_momentum": 107.71,
+          "quadrant": "Leading"
+        },
+        {
+          "date": "2026-05-22",
+          "rs_ratio": 122.99,
+          "rs_momentum": 97.19,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-05-29",
+          "rs_ratio": 122.18,
+          "rs_momentum": 87.43,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-06-05",
+          "rs_ratio": 119.8,
+          "rs_momentum": 82.83,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-06-12",
+          "rs_ratio": 118.41,
+          "rs_momentum": 85.42,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-06-19",
+          "rs_ratio": 117.77,
+          "rs_momentum": 87.98,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-06-26",
+          "rs_ratio": 116.17,
+          "rs_momentum": 88.89,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-07-03",
+          "rs_ratio": 114.35,
+          "rs_momentum": 90.41,
+          "quadrant": "Weakening"
+        }
+      ]
+    },
+    {
+      "ticker": "XLE",
+      "name": "Energy",
+      "quadrant": "Lagging",
+      "weeks_in_quadrant": 5,
+      "heading": "holding",
+      "rs_ratio": 80.63,
+      "rs_momentum": 87.8,
+      "momentum_percentile": 15,
+      "signal": {
+        "subject_type": "sector",
+        "subject": "XLE",
+        "source": "relative_strength_ratio",
+        "direction": "bearish",
+        "percentile_vs_history": 15,
+        "confirmed": true,
+        "descriptor": "XLE (Energy): entrenched laggard, 5 wk in Lagging with no sign of a turn (RS-Ratio 80.6, RS-Momentum 87.8 at p15 of trailing 27 wks, heading holding)",
+        "as_of": "2026-07-03",
+        "staleness": "fresh"
+      },
+      "series": [
+        {
+          "date": "2026-01-02",
+          "rs_ratio": 87.4,
+          "rs_momentum": 91.07,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-01-09",
+          "rs_ratio": 89.67,
+          "rs_momentum": 94.45,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-01-16",
+          "rs_ratio": 99.2,
+          "rs_momentum": 113.6,
+          "quadrant": "Improving"
+        },
+        {
+          "date": "2026-01-23",
+          "rs_ratio": 119.02,
+          "rs_momentum": 128.19,
+          "quadrant": "Leading"
+        },
+        {
+          "date": "2026-01-30",
+          "rs_ratio": 127.62,
+          "rs_momentum": 124.03,
+          "quadrant": "Leading"
+        },
+        {
+          "date": "2026-02-06",
+          "rs_ratio": 128.15,
+          "rs_momentum": 118.13,
+          "quadrant": "Leading"
+        },
+        {
+          "date": "2026-02-13",
+          "rs_ratio": 126.64,
+          "rs_momentum": 109.53,
+          "quadrant": "Leading"
+        },
+        {
+          "date": "2026-02-20",
+          "rs_ratio": 123.98,
+          "rs_momentum": 95.35,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-02-27",
+          "rs_ratio": 122.2,
+          "rs_momentum": 89.89,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-03-06",
+          "rs_ratio": 121.05,
+          "rs_momentum": 90.01,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-03-13",
+          "rs_ratio": 120.26,
+          "rs_momentum": 91.31,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-03-20",
+          "rs_ratio": 119.9,
+          "rs_momentum": 93.07,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-03-27",
+          "rs_ratio": 120.18,
+          "rs_momentum": 94.26,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-04-03",
+          "rs_ratio": 118.16,
+          "rs_momentum": 93.68,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-04-10",
+          "rs_ratio": 115.5,
+          "rs_momentum": 92.67,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-04-17",
+          "rs_ratio": 112.41,
+          "rs_momentum": 91.48,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-04-24",
+          "rs_ratio": 110.45,
+          "rs_momentum": 91.3,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-05-01",
+          "rs_ratio": 109.24,
+          "rs_momentum": 92.86,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-05-08",
+          "rs_ratio": 106.64,
+          "rs_momentum": 93.74,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-05-15",
+          "rs_ratio": 105.51,
+          "rs_momentum": 95.92,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-05-22",
+          "rs_ratio": 104.13,
+          "rs_momentum": 97.6,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-05-29",
+          "rs_ratio": 100.31,
+          "rs_momentum": 89.37,
+          "quadrant": "Weakening"
+        },
+        {
+          "date": "2026-06-05",
+          "rs_ratio": 97.49,
+          "rs_momentum": 89.89,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-06-12",
+          "rs_ratio": 93.08,
+          "rs_momentum": 81.42,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-06-19",
+          "rs_ratio": 83.27,
+          "rs_momentum": 72.69,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-06-26",
+          "rs_ratio": 80.52,
+          "rs_momentum": 80.61,
+          "quadrant": "Lagging"
+        },
+        {
+          "date": "2026-07-03",
+          "rs_ratio": 80.63,
+          "rs_momentum": 87.8,
+          "quadrant": "Lagging"
+        }
+      ]
+    }
+  ]
+}
