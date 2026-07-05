@@ -61,4 +61,8 @@ def fetch_daily_bars(ticker: str) -> RawObservation:
 
 def fetch_all(tickers: list[str]) -> dict[str, RawObservation]:
     """Batch entry point: fetch raw daily bars for every ticker."""
-    return {ticker: fetch_daily_bars(ticker) for ticker in tickers}
+    observations = {}
+    for ticker in tickers:
+        observations[ticker] = fetch_daily_bars(ticker)
+        print(f"fetched {ticker}", flush=True)
+    return observations
