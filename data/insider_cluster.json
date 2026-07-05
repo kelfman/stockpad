@@ -88,5 +88,41 @@
       "staleness": "fresh"
     },
     "sector_etf": "XLK"
+  },
+  {
+    "ticker": "KMX",
+    "latest_count": 3,
+    "days_since_last_buy": 10,
+    "total_purchases": 9,
+    "signal": {
+      "subject_type": "ticker",
+      "subject": "KMX",
+      "source": "insider_form4_cluster",
+      "direction": "bullish",
+      "percentile_vs_history": null,
+      "confirmed": true,
+      "descriptor": "KMX: 3 distinct insiders bought in the trailing 12 days -- confirmed cluster buy (last open-market buy 10d ago; 9 in the trailing 2 yrs)",
+      "as_of": "2026-07-05",
+      "staleness": "fresh"
+    },
+    "sector_etf": "XLY"
+  },
+  {
+    "ticker": "LILA",
+    "latest_count": 3,
+    "days_since_last_buy": 9,
+    "total_purchases": 35,
+    "signal": {
+      "subject_type": "ticker",
+      "subject": "LILA",
+      "source": "insider_form4_cluster",
+      "direction": "bullish",
+      "percentile_vs_history": null,
+      "confirmed": true,
+      "descriptor": "LILA: 3 distinct insiders bought in the trailing 12 days -- confirmed cluster buy (last open-market buy 9d ago; 35 in the trailing 2 yrs)",
+      "as_of": "2026-07-05",
+      "staleness": "fresh"
+    },
+    "sector_etf": "XLC"
   }
 ]
